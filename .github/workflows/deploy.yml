@@ -1,9 +1,7 @@
-name: Deploy to GitHub Pages
+name: Deploy Hexo to GitHub Pages
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
 
 jobs:
@@ -11,22 +9,31 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          submodules: false  # 明确禁用子模块，避免权限问题
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'  # 建议使用Node.js 20 LTS版本
           cache: 'npm'
-
+          
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          # 可以考虑移除全局安装 hexo-cli，依赖项目本地安装的hexo
+          
+      - name: Ensure execute permissions  # 新增步骤：确保执行权限
+        run: |
+          chmod +x ./node_modules/.bin/hexo || true
+          chmod +x ./node_modules/.bin/hexo-cli || true
 
       - name: Build with Hexo
         run: |
-          npm run build
-          # 或者使用 hexo generate
+          npx hexo clean  # 使用npx确保调用本地安装的hexo
+          npx hexo generate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
