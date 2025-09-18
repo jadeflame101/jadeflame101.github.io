@@ -1,100 +1,296 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#1a1a1a"><meta name="msapplication-navbutton-color" content="#1a1a1a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Hexo</title><script>(function() {
-  // 尽早应用暗色模式，防止闪烁
-  var savedDarkMode = localStorage.getItem('darkMode') === 'true';
-  if (savedDarkMode) {
-    document.documentElement.classList.add('dark-mode');
-  }
-})();
-</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="icon" href="/null">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="/css/tags.css">
 
-<link rel="stylesheet" href="/css/categories.css">
 
-<link rel="stylesheet" href="/css/categories-accordion.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<link rel="stylesheet" href="/css/highlight.css">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
-<link rel="stylesheet" href="/css/toc.css">
+    <meta name="description" content="这是一个基于Hexo的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jadeflame">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Jadeflame">
+<meta property="og:description" content="这是一个基于Hexo的个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Jadeflame">
+<meta property="article:tag" content="Zxt20051225.">
+<meta name="twitter:card" content="summary">
 
-<link rel="stylesheet" href="/css/image-zoom.css">
 
-<link rel="stylesheet" href="/css/share.css">
+<link rel="canonical" href="http://example.com/">
 
-<link rel="stylesheet" href="/css/mobile-nav.css">
 
-<link rel="stylesheet" href="/css/search.css">
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
 
-<link rel="stylesheet" href="/css/scrollbar.css">
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Jadeflame</title>
+  
 
-<link rel="stylesheet" href="/css/timeline.css">
 
-<link rel="stylesheet" href="/css/animations.css">
 
-<link rel="stylesheet" href="/css/ai-theme.css">
 
-<link rel="stylesheet" href="/css/loading-animation.css">
-<!-- 条件加载关于页面样式--><style>:root {
-  --primary-color: #1a1a1a;
-  --secondary-color: #666666;
-  --accent-color: #ff6b6b;
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --overlay-color: rgba(0, 0, 0, 0.7);
-  --tag-background-color: #ffffff;
-  --card-background-color: #ffffff;
-}
-</style><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/qxchuckle/Post-Summary-AI/chuckle-post-ai.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="app"><header class="header navbar-bubble"><nav class="nav"><div class="nav-container"><div class="nav-logo"><a href="/"><span class="nav-title">Hexo</span></a></div><div class="nav-menu"><a class="nav-item active" href="/">首页</a><a class="nav-item" href="/about/">关于</a><a class="nav-item" href="/archives/">归档</a><a class="nav-item" href="/categories/">分类</a><a class="nav-item" href="/tags/">标签</a><div class="nav-item has-submenu"><span class="nav-link">网站</span><div class="submenu"><a class="submenu-item" href="https://example.com">示例网站</a></div></div><!-- 搜索按钮--><div class="search-toggle"><i class="fas fa-search"></i></div></div><div class="nav-toggle"><span></span><span></span><span></span></div></div></nav></header><div class="search-overlay"><div class="search-container"><div class="search-form"><input class="search-input" type="text" placeholder="搜索文章..."/><div class="search-close">×</div></div><div class="search-results"></div></div></div><main class="main"><section class="author-card-section"><div class="author-card-container"><div class="author-card author-card--with-bg author-card--large" style="background-image: url('/images/13.jpg')"><!-- 动态背景容器--><div class="author-avatar"><img src="/images/0.gif" alt="Author Avatar"/></div><div class="author-info"><h2 class="author-name">然</h2><p class="author-bio">人生而自由，却无往不在枷锁之中</p><div class="author-social"><a class="social-link" href="https://github.com/forever218" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a><a class="social-link" href="https://space.bilibili.com/82657269" target="_blank" rel="noopener" title="Bilibili"><i class="fab fa-bilibili"></i></a><a class="social-link" href="mailto:mailto:3316703158@qq.com" title="Email"><i class="fas fa-envelope"></i></a></div><div class="author-cta"><a class="author-button" href="/about/">关于我</a></div></div></div></div></section><section class="articles-section"><div class="articles-container"><div class="articles-header"><div class="articles-filter"></div></div><div class="articles-grid"><article class="article-card article-card--large"><div class="article-image"><a href="/2025/09/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"><img src="/images/19.png" alt="我的第一篇文章" loading="lazy"/></a></div><div class="article-content"><div class="article-meta"><span class="article-category"><a href="/categories/text/">text</a></span><time class="article-date" datetime="2025-09-09T06:08:52.000Z">Sep 09, 2025</time></div><h3 class="article-title"><a href="/2025/09/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a></h3><div class="article-tags"><a class="tag" href="/tags/text/">text</a></div></div></article><article class="article-card article-card--medium"><div class="article-image"><a href="/2025/09/09/hello-world/"><img src="/images/19.png" alt="Hello World" loading="lazy"/></a></div><div class="article-content"><div class="article-meta"><time class="article-date" datetime="2025-09-09T06:02:09.054Z">Sep 09, 2025</time></div><h3 class="article-title"><a href="/2025/09/09/hello-world/">Hello World</a></h3><div class="article-tags"></div></div></article></div></div></section></main><footer class="footer"><div class="footer-bottom"><div class="footer-copyright">© 2025 李思然. All rights reserved.</div><!-- Footer centered image with link--><div class="footer-image" style="text-align: center; margin: 15px 0;"><a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer"><img src="https://s21.ax1x.com/2024/08/23/pAFm0cq.png" alt="Footer Image" style="max-width: 100%; height: auto;"/></a></div><div class="footer-badges"><a target="_blank" rel="noopener" href="https://hexo.io/" title="博客框架为Hexo_v5.4.0"><img src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="本站已在粤网管局备案"><img src="https://img.shields.io/badge/粤ICP备-2022157092号-yellow.svg?logo=data:image/png;base64,UklGRjgCAABXRUJQVlA4WAoAAAAQAAAAEwAAEwAAQUxQSJgAAAABgKpt//nn+RvZ89KuNVcbR6C6pBNYW12zl61oO23Vtu2/v59TiIgJILircnOrKgLlzL4Pj8fj+RkuUTB7FE0hIuZVxs1B4r88yudxAakeYQIQsSiZiYVaj7ge2mS9cCbbgTfZIYzJmmFVtgQ/slsolaUB5Y9qtzkAmRdqN0EmPMKBAGvjq8pRnTYAbBVdK9unpytTDQVaAFZQOCB6AQAAEAgAnQEqFAAUAD6RQJhJpaOiISgKqLASCWwAnTKEeZ+Z8UG4b3S8Uuxj0APK49jD9jvRsJlHSAAk4peJdT29v1IEVadPwR6oAAD+BVzylNKb2DP80JoQLtKM1HYe/A2NwP2FBXtSNypNu+PttP+EadMJsrmm/ULTvb6jEqpziSt//sRMcbrAVYftaY1KNWWudr1AdlUv5D5HRoEfwcV0Pu9dhsXZ3ojpXwjGWWBJfv4puUOV9aczt7uvE8SHYSo33C18yNeqL9sZ211bKOY/rjT8Wzi9Wg+hj7Xvi/3NC1proBfzmpWysW6y3/63VcYMlVBx6v5o9WNvzL1XLvbR7wTooDXtSEjt6rJoaazbMoXie0mzg0G+evKLZ8vz/yKv/u4RDK0EF+ejNfOOU0ZhepG6b/Ewbk1BofcYZC8JB4a2NPUtwhHtqE3tVT8PlHEvlf+xYFbG7Wms4JVHiSMfc36K5LOwcwC89RYMLn0jFD1wQF2/QrJAAAAA" alt="本站已在粤网管局备案"/></a><a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></div></div></footer></div><!-- 立即应用暗色模式，避免页面闪烁--><script>(function() {
-  // 检查本地存储中的暗色模式设置
-  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-  // 如果设置为暗色模式，立即应用到body
-  if (savedDarkMode) {
-    document.body.classList.add('dark-mode');
-  }
 
-  // 防止页面闪烁，在DOM加载完成前设置一个初始类
-  document.documentElement.style.visibility = 'hidden';
-  document.addEventListener('DOMContentLoaded', function() {
-    document.documentElement.style.visibility = 'visible';
-  });
-})();
-</script>
-<script src="/js/main.js"></script>
 
-<script src="/js/tags.js"></script>
 
-<script src="/js/categories-accordion.js"></script>
 
-<script src="/js/highlight.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
 
-<script src="/js/load-more.js"></script>
+  
 
-<script src="/js/header-scroll.js"></script>
 
-<script src="/js/toc.js"></script>
 
-<script src="/js/image-zoom.js"></script>
 
-<script src="/js/share.js"></script>
 
-<script src="/js/search.js"></script>
 
-<script src="/js/hide-inline-interaction.js"></script>
+  
 
-<script src="/js/hide-toggle-interaction.js"></script>
 
-<script src="/js/dark-mode-sync.js"></script>
 
-<script src="/js/animations.js"></script>
 
-<script src="/js/ai-theme.js"></script>
 
-<script src="/js/loading-animation.js"></script>
-<script>window.theme = {
-  features: {"dark_mode":true,"smooth_scroll":true,"back_to_top":true,"loading_animation":true},
-  code_block: {"height_limit":200,"enable_folding":true,"max_height":"300px","show_lang":true},
-  ai_summary: {"enable":true,"api_key":"","summary_directly":false,"ai_name":"然-AI","ai_introduce":"我是文章辅助AI: 然-AI，一个基于deepseek的强大语言模型，有什么可以帮到您？😊","ai_version":"deepseekv3","buttons":["介绍自己","来点灵感","生成AI简介"]},
-  categories: {"layout":"accordion","accordion_animation":true,"show_empty_categories":true}
-};
-</script><script src="/js/ai.js"></script><script src="/js/postai.js"></script></body></html>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Jadeflame</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享图形学的学习</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jadeflame</p>
+  <div class="site-description" itemprop="description">这是一个基于Hexo的个人博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/09/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jadeflame">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jadeflame">
+      <meta itemprop="description" content="这是一个基于Hexo的个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Jadeflame">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/09/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">我的第一篇文章</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-09-09 14:08:52 / 修改时间：14:15:50" itemprop="dateCreated datePublished" datetime="2025-09-09T14:08:52+08:00">2025-09-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/text/" itemprop="url" rel="index"><span itemprop="name">text</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="这是一级标题（文章标题用上面的Front-matter，这里通常用二级标题）"><a href="#这是一级标题（文章标题用上面的Front-matter，这里通常用二级标题）" class="headerlink" title="这是一级标题（文章标题用上面的Front-matter，这里通常用二级标题）"></a>这是一级标题（文章标题用上面的Front-matter，这里通常用二级标题）</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><p>这是段落正文。只需要直接写就行了。</p>
+<p><strong>这是加粗的文字</strong><br><em>这是斜体的文字</em></p>
+<ul>
+<li>这是列表项一</li>
+<li>这是列表项二<ul>
+<li>子列表项</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>有序列表一</li>
+<li>有序列表二</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.doubao.com/chat/?channel=bing_sem&source=dbweb_bing_sem_xhs_cpc_pinp_tup_hexin_bianti_05&keywordid=76966233415022&msclkid=0c015c7204ee13ddb14534cdc1b9a069">这是一个链接</a></p>
+<p><code>这是行内代码</code></p>
+<pre><code class="python"># 这是代码块
+print(&quot;Hello, World!&quot;)
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jadeflame</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
