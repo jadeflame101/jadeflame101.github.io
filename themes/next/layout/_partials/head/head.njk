@@ -46,6 +46,9 @@
 
 <link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css">
 
+<!-- KaTeX CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
 {{ next_font() }}
 
 {{ next_vendors('fontawesome') }}
@@ -65,3 +68,22 @@
 
 {{ next_data('main', next_config()) }}
 {{- next_js('config.js') }}
+
+<!-- KaTeX JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"></script>
+
+<!-- KaTeX 自动渲染配置 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+        ],
+        throwOnError: false
+    });
+});
+</script>
